@@ -19,9 +19,13 @@ let browser, page;
 fs.mkdirSync(`./data/${conf.congressionalNumber}`, { recursive: true });
 
 (async () => {
-  browser = await puppeteer.launch({ headless: false, args: [`--window-size=1800,950`] });
+  browser = await puppeteer.launch({
+    // headless: false, args: [`--window-size=1800,950`]
+  });
   page = await browser.newPage();
-  await page.setViewport({ width: 1800, height: 950 });
+  //   await page.setViewport(
+  //       { width: 1800, height: 950 }
+  //       );
   await page.setDefaultNavigationTimeout(300000);
 
   let dailyRemarkArchives;
