@@ -13,4 +13,4 @@ A script I wrote for another project to collect Congressional Remarks.
 
 `--with-front` - Launch Puppeteer with headless mode disabled
 
-`--restart` - Starts the data collection from the beginning, instead of continuing from last run
+`--restart` - Starts the data collection from the beginning, instead of continuing from previous run
